@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "488b1f4f-fcf4-4802-b955-7663cdf47091",
+		"name": "IOCL_VC_SMART_Login_API's_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29508073",
+		"_collection_link": "https://speeding-resonance-716623.postman.co/workspace/New-Team-Workspace~9ea0e4e8-0366-4fb3-99bd-b719838fea4a/collection/29508073-488b1f4f-fcf4-4802-b955-7663cdf47091?action=share&source=collection_link&creator=29508073"
+	},
+	"item": [
+		{
+			"name": "ConsigneeManager",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nhKsSuxywQJb/5d+K+lENPJCrNNrEeCvKTfUQbDl/jaeY/GOU1mqp5h3c3K/0YDmd9WATsrbOMGpIII78LKkp64usEUo6Tmo5qRmiLs7taG4mbRZK2w148dWXp26rV3yKsgAA9TQp5yE4UO3S8Dth3vqpVLOhbf8jchJfeIVY1oXtxuDU0NlOaTCZHIoWoOIqMnKs9TMs12g1OENFL6ccUYPTNXn8N1WLORbtC8w//CM3+DfQfur+QQn0XrJjO8jo1ANR1a9fqDtTtguv7i+skjUK06aC0R18Y9zvA0o2mElizD4f8dbT4+BoL+KjhnhQLWtvCOpyghJdEFCGv2bbg==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accountId\":138,\r\n   \"userId\":19274\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/consigneeManager/post/json/getUserConsignees",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"consigneeManager",
+						"post",
+						"json",
+						"getUserConsignees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDashboardCount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"userId\":19274,\r\n   \"consignerId\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/status/post/json/getDashboardCounts",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"status",
+						"post",
+						"json",
+						"getDashboardCounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDeliveredTripCount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"userId\":19274,\r\n   \"fromDate\":null,\r\n   \"toDate\":null,\r\n   \"consignerId\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/status/post/json/getRecentlyDeliveredTripsCountDetails",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"status",
+						"post",
+						"json",
+						"getRecentlyDeliveredTripsCountDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDispatchedTripCount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"userId\":19274,\r\n   \"fromDate\":null,\r\n   \"toDate\":null,\r\n   \"consignerId\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/status/post/json/getRecentlyDispatchedTripsCountDetails",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"status",
+						"post",
+						"json",
+						"getRecentlyDispatchedTripsCountDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetViolationCountDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"userId\":19274,\r\n   \"userGroup\":-1,\r\n   \"consignerId\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/status/post/json/getOnTripVehicleSafetyViolationCountDetails",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"status",
+						"post",
+						"json",
+						"getOnTripVehicleSafetyViolationCountDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTransporterPerfromanceCount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"userId\":19274,\r\n   \"fromDate\":\"2023-08-12 12:13:33\",\r\n   \"toDate\":\"2023-09-11 12:13:33\",\r\n   \"consignerId\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/status/post/json/getTransporterPerformanceCountDetails",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"status",
+						"post",
+						"json",
+						"getTransporterPerformanceCountDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOnTripStatusCount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"userId\":19274,\r\n   \"consignerId\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/status/post/json/getOnTripStatusCounts",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"status",
+						"post",
+						"json",
+						"getOnTripStatusCounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

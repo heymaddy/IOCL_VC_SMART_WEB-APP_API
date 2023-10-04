@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "8b1e3e60-0d28-420e-aa16-dfc5b5ebdac3",
+		"name": "IOCL_VC_SMART_ADMIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29508073",
+		"_collection_link": "https://speeding-resonance-716623.postman.co/workspace/New-Team-Workspace~9ea0e4e8-0366-4fb3-99bd-b719838fea4a/collection/29508073-8b1e3e60-0d28-420e-aa16-dfc5b5ebdac3?action=share&source=collection_link&creator=29508073"
+	},
+	"item": [
+		{
+			"name": "UserLandmark-ADMIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"accountId\":138,\"userId\":19274}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/masters/landmarkManager/post/json/getUserLandmarks",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"masters",
+						"landmarkManager",
+						"post",
+						"json",
+						"getUserLandmarks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserRouteMaster-ADMIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accountId\":138,\r\n   \"userId\":19274\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/masters/post/json/getUserRoutes",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"masters",
+						"post",
+						"json",
+						"getUserRoutes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserCarrierMaster-ADMIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accountId\":138,\r\n   \"userId\":19274\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/carrierManager/post/json/getUserCarriers",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"carrierManager",
+						"post",
+						"json",
+						"getUserCarriers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserGeoAreas-ADMIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\": 138,\r\n    \"userId\": 19274\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/geoareaManager/post/json/getAccountGeoareas",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"geoareaManager",
+						"post",
+						"json",
+						"getAccountGeoareas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserVehicleMaster-ADMIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "{{BASE_URL}}",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{Bearar_Token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\" : \"19274\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/VCSmart/vehicleMaster/post/json/getVehicleMasterView",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"VCSmart",
+						"vehicleMaster",
+						"post",
+						"json",
+						"getVehicleMasterView"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
